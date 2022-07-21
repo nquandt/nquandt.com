@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button {
+        @apply bg-sage hover:bg-sage2 rounded-md shadow-md;        
+    }
+}
+
+[data-state="squish"] {
+    max-height: 0px !important;
+}
+
+[data-state="hidden"] {
+    display:none !important;
+}
+
+@layer components {
+    div,
+    main {
+        display: flex;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    nav-link {
+        cursor: pointer;
+        font-weight: 300;
+    }
+    .title {
+        font-weight: 100;
+    }
+    p {
+        font-weight: 300;
+    }
+    h1 {
+        font-weight: 300;
+        font-size: 3rem;
+    }
+    h2 {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .title,
+    p,
+    h1,
+    h2,
+    h3,
+    nav-link {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+    }
+    .hidden {
+        display: none;
+    }
+
+    .nav{
+        transition: right .5s;
+        right: -100%;
+    }
+
+    .nav.nav-fixed {        
+        right:0;
+    }   
+
+    button{
+        transition: background-color .3s;
+    }
+
+    svg {
+        transition: fill .3s;
+    }
+
+    
+
+    /* .nav {
+        transition-delay: .5s;
+        transition: all .5s;
+        top: 0;    
+    }
+
+    .nav:not(.nav-fixed) {        
+        min-width: 100%;
+        height: 4rem;
+        flex-direction: row;        
+        padding: unset;        
+    }
+
+    .nav.nav-fixed {
+        top: 100px;
+    }   
+
+    .nav:not(.nav-fixed) .nav-top {
+        display: none;        
+    }
+
+    .nav:not(.nav-hold) nav-link button{        
+        background-color: unset;
+        transition-delay: 0s;
+        transition-property: background-color;
+        transition-duration: 0s;
+    }
+
+    .nav nav-link button {
+        transition-delay: .5s;
+        transition-property: background-color;
+        transition-duration: .5s;
+    } */
+
+
+}
+
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/assets/S6u8w4BMUTPHh30AXC-q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
