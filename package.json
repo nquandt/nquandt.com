@@ -1,41 +1,35 @@
 {
-  "name": "quintessentialquandts-web",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "16.14.2"
-  },
+  "name": "sveltekit-blog-starter",
+  "version": "1.4.2",
   "scripts": {
-    "dev": "gulp watch:rollup",
-    "build": "gulp rollup"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nquandt/quintessentialquandts-web.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nquandt/quintessentialquandts-web/issues"
-  },
-  "homepage": "https://github.com/nquandt/quintessentialquandts-web#readme",
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@splidejs/splide": "^4.0.6",
+    "@sveltejs/adapter-static": "^1.0.0-next.21",
+    "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.7",
-    "concurrently": "^7.2.1",
-    "cssnano": "^5.1.10",
-    "fs-extra": "^10.1.0",
-    "glob": "^8.0.3",
-    "gulp": "^4.0.2",
-    "gulp-rollup": "^2.17.0",
-    "mkdirp": "^1.0.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "mdsvex": "^0.9.8",
     "postcss": "^8.4.14",
-    "postcss-discard-comments": "^5.1.2",
-    "postcss-import": "^14.1.0",
-    "rollup": "^2.75.3",
-    "rollup-plugin-terser": "^7.0.2",
-    "tailwindcss": "^3.0.24"
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "rehype-autolink-headings": "^6.1.0",
+    "rehype-slug": "^5.0.0",
+    "sass": "^1.43.4",
+    "svelte": "^3.42.6",
+    "svelte-preprocess": "^4.10.7",
+    "tailwindcss": "^3.1.6",
+    "vite": "^2.9.14"
+  },
+  "type": "module",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "just-throttle": "^4.0.1"
   }
 }

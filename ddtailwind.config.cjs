@@ -1,14 +1,11 @@
-module.exports = {
+exports.default = {
   content: ["src/*.{html,js}"],
   theme: {
     extend: {
       transitionProperty: {
         'max-h': 'max-height'
       },
-      colors: {
-        'sage': '#d0e0c6',
-        'sage2' : '#C2D1B8',
-        'willow': '#425934'
+      colors: {      
       },
       screens: {
         'xs': '300px',
