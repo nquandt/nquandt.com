@@ -4,6 +4,7 @@
     import HeaderIcon from '$lib/components/resume/HeaderIcon.svelte';
 	import Section from '$lib/components/resume/Section.svelte';
 	import Strengths from '$lib/components/resume/Strengths.svelte';
+	import Favorites from '$lib/components/resume/Favorites.svelte';
 	import TalkingPoint from '$lib/components/resume/TalkingPoint.svelte';
 
 	import GithubSvg from '$lib/components/svg/GithubSVG.svelte';
@@ -44,9 +45,9 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 										<div class="text-5xl uppercase tracking-[.4em] font-bold">Quandt</div>
 									</div>
 									<div class="flex flex-col items-end justify-between text-gray-400 fill-gray-400 font-semibold py-4">
-										<HeaderIcon text="Tempe, AZ" glyph={EmailSvg}/>
+										<HeaderIcon text="Tempe, AZ" glyph={LocationSvg}/>
                                         <HeaderIcon text="{variables.phone}" glyph={PhoneSvg}/>
-                                        <HeaderIcon text="{variables.email}" glyph={LocationSvg}/>										
+                                        <HeaderIcon text="{variables.email}" glyph={EmailSvg}/>
 									</div>
 								</div>
 							</div>
@@ -55,9 +56,7 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 							<div class="md:w-1/3 flex flex-col gap-4">
 								<Section title="Profile">
 									<div class="print:text-xs">
-										Master's student and aspiring software developer in pursuit of professional
-										experience to apply knowledge in both computational and mathematical sciences
-										with an interest in back-end and algorithm development.
+										Full-Stack Software Engineer, with an affinity towards .NET, Svelte and algorithms, in pursuit of learning, collaboration, community, and continuous professional growth.
 									</div>
 								</Section>
 								<Section title="Eductation">
@@ -68,8 +67,9 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 										<div class="print:text-xs text-sm">2019 / B.S. in Mathematics</div>
 									</div>
 								</Section>
-								<Strengths />
-								<Skills />								
+								<Favorites />
+								<!-- <Strengths />								 -->
+								<Skills />																
 							</div>
 							<div class="md:w-2/3 flex flex-col">
 								<Exprience></Exprience>
@@ -78,19 +78,22 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 										title="nquandt.com"
 										company="https://github.com/nquandt/nquandt.com" 
 										date="Current">
+										<ul>
 										<li>
 											All of the code for my website is available on github.
 										</li>										
 										<li>
 											I'm utilizing svelte as an FE framework, and vite for building as SSG.
 										</li>
+									</ul>
 									</TalkingPoint>
 									<TalkingPoint
 										title="Quandt.Endpoints"
 										company="https://github.com/nquandt/Quandt/tree/master/src/Endpoints/Endpoints/src" 
 										date="Current">
+										<ul>
 										<li>
-											This is an opinionated implementation of endpoints for Minimal API (.NET 6).
+											This is an opinionated implementation of endpoints for Minimal API (.NET 6), where one route equates to one file (endpoint).
 										</li>
 										<li>
 											It intends to abstract the registration process of <span class="font-mono">app.MapMethod(...)</span> by utilizing a standard pattern for an "Endpoint".
@@ -99,17 +102,23 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 											This utilizes a new C# feature, static abstract generics to create a fluent api for creating endpoints for various needs.
 										</li>
 										<li>
+											The endpoints provide full dependency resolution via typical constructor injection.
+										</li>										
+										<li>
 											Serialization is abstracted by allowing a user to inject an <span class="font-mono">IJsonSerializer</span> via dependency injection to handle inbound and outbound serialization.
 										</li>
 										<li>
-											I provide an <a class="nprint:underline underline-offset-2 hover:text-blue-500" href="https://github.com/nquandt/Quandt/tree/master/example/NET6">example .NET 6 project</a> utilizing this package.
+											A <a href="https://github.com/nquandt/Quandt/tree/master/example/NET6">.NET 6 example project</a> utilizing this package is available on github under the "examples" folder.
 										</li>
+										</ul>
 									</TalkingPoint>
 									<TalkingPoint
 										title="McMaster Addin For Inventor | C#"
 										company="https://github.com/nquandt/mafi"
 										date="December 2019"
+										class="print:hidden"
 									>
+									<ul>
 										<li>Interop Add-In for Autodesk Inventor developed with C#.</li>
 										<li>
 											Implements CEFSharp to embed a chromium based browser for both user
@@ -125,16 +134,19 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 											Embedded assemblies are used to minimize number of files needed to install.
 											These are loaded into memory at runtime to maintain version correctness.
 										</li>
+									</ul>
 									</TalkingPoint>
 									<TalkingPoint
 										title="Parallel Functions | C (gcc)"
 										company="https://github.com/nquandt/parallel-functions"
 										date="April 2021"
 									 class="print:hidden">
+									 <ul>
 									<li>Parallel implementations of mathematical functions taken over a set
 									of values.</li>
 									<li>Optimized for <span class="font-mono">WORD</span> sized values.</li>
 									<li>Example <span class="font-mono">>_: setgcd 42 91 77 140</span><span class="pl-8">output: <span class="font-mono">7</span></span></li>
+								</ul>
 									</TalkingPoint>
 								</Section>
 								

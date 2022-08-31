@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  a[target="_blank"] {
+    @apply nprint:underline underline-offset-2 hover:text-blue-500 transition-colors;
+  }
+
+  ul { 
+    @apply list-list text-sm print:text-xs;
+  }
+}
+
 @layer utilities{
     .list-list {
         list-style-type: disc;

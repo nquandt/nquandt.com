@@ -1,0 +1,18 @@
+---
+title: 'CAD/CNC Programmer'
+company: 'United Tool Llc.'
+date: 'September 2018 - August 2021'
+---
+<script>
+    export let index;
+    import TalkingPoint from '../TalkingPoint.svelte';
+</script>
+
+
+<TalkingPoint {title} {company} {date} {index} class="print:hidden">
+
+- Design and create tooling to manufacture customer parts for both rapid prototyping and large production run items.
+- Program, setup, and operate CNC Vertical Mills and CNC Turning Centers to produce parts per customer specification.
+- Perform inspection of manufactured parts, following dimension and tolerances from customer's detailed drawing.
+
+</TalkingPoint>

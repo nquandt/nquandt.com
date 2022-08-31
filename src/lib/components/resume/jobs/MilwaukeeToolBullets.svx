@@ -1,0 +1,25 @@
+---
+title: 'Senior Software Engineer'
+company: 'Milwaukee Tool Inc.'
+date: 'August 2021 - Present'
+---
+<script>
+    export let index;
+    import TalkingPoint from '../TalkingPoint.svelte';
+</script>
+
+
+<TalkingPoint {title} {company} {date} {index} url="https://www.milwaukeetool.com">
+
+- Maintain a multi-site [Sitecore 10 XM](https://www.sitecore.com/products/experience-manager?utm_websource=products) topology in kubernetes ([AKS](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes)), with full server side rendering via. [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-6.0).
+- Incrementally migrate from [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-6.0) pages to a [Svelte](https://svelte.dev/) based rendering engine.
+- Plan and execute the Back-End half of development for a [product catalog utility](https://www.milwaukeetool.com/innovations/solutions), and [product comparison tool](https://www.milwaukeetool.com/products/power-tools/drilling/compare), both powered by [Svelte](https://svelte.dev/) and [Solr](https://solr.apache.org/).
+- Create a new solution to decouple a small team from the primary development team to allow rapid development utilizing a microservice architecture. Including full devops pipelines and procedures.
+- Implement a new development workflow, to allow the use of various Front-End frameworks for our site. Achieved through the use of [Gulp](https://gulpjs.com/) and [Rollup](https://rollupjs.org/).
+- Integrate our .NET application with [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts) for key, secret, and certificate maintainance and security.
+- Strategize and execute a site wide migration from Brightcove to Vimeo as a video hosting platform, including library migration.
+- Implement health checks in our .NET application to prevent cold starts on kubernetes.
+- Maintain [Ingress-NGINX](https://github.com/kubernetes/ingress-nginx) in kubernetes as a reverse proxy to route traffic between multiple applications.
+- Give monthly lunch'n'learn talks to the greater web dev team on various topics including: general development practice, new technologies, coding principles, etc.
+
+</TalkingPoint>
