@@ -57,7 +57,7 @@ import WebSvg from '$lib/components/svg/WebSVG.svelte';
 							</div>
 						</div>
 						<div class="px-6 gap-6 py-6 flex md:flex-nowrap flex-wrap">
-							<div class="md:w-1/3 flex flex-col gap-6">
+							<div class="md:w-1/3 flex flex-col gap-6 print:gap-4">
 								<Section title="Summary">
 									<div class="print:text-sm">
 										Full-Stack Developer, with an affinity for object-oriented development and algorithms, in pursuit of learning, collaboration, community, and continuous professional growth.

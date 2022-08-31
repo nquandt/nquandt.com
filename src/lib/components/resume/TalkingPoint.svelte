@@ -29,7 +29,7 @@
 		</div>
 		<div class="text-gray-600 text-end">{date}</div>
 	</div>	
-	<div class="w-full {index >= 1 ? "print:hidden" : ""}">		
+	<div class="w-full pt-2 {index >= 1 ? "print:hidden" : ""}">		
 		<slot />		
 	</div>
 </div>
