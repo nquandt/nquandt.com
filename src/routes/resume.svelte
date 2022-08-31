@@ -56,7 +56,7 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 							<div class="md:w-1/3 flex flex-col gap-4">
 								<Section title="Profile">
 									<div class="print:text-xs">
-										Full-Stack Software Engineer, with an affinity towards .NET, Svelte and algorithms, in pursuit of learning, collaboration, community, and continuous professional growth.
+										Full-Stack Developer, with an affinity towards .NET, Svelte, and algorithms, in pursuit of learning, collaboration, community, and continuous professional growth.
 									</div>
 								</Section>
 								<Section title="Eductation">
