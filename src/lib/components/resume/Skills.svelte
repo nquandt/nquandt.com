@@ -71,9 +71,9 @@
 			value: 4
 		},
 		{
-			display: 'REST',
+			display: 'Solr',
 			value: 4,
-			details: ['Headers', 'Protocol', 'Verbs']
+			details: ['Admin API', 'SearchStax', 'Cores/Collections/Shards']
 		},
 		{
 			display: 'Python',
