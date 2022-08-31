@@ -7,7 +7,7 @@
 </script>
 <script>
 	import '../styles.css';
-	import { siteDescription } from '$lib/config';
+	// import { siteDescription } from '$lib/config';
 	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
 	import { fade } from 'svelte/transition';
 

@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'nprint' : {'raw': 'not print'},
         'md': { 'raw': 'print, (min-width: 768px)' },
       },
       transitionProperty: {

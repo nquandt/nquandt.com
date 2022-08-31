@@ -1,6 +1,3 @@
-# Vanilla JavaScript App
+# [nquandt.com](https://www.nquandt.com)
 
-
-[Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build JavaScript apps in minutes. Use this repo with the [quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript) to build and customize a new static site.
-
-This repo is used as a starter for a _very basic_ HTML web application using no front-end frameworks.
+This repository is for my personal website. It's utilizing svelte and vite for SSG. I'm hosting on [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview). This is a custom implementation, but you can follow their [quickstart guide for vanilla-js](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=vanilla-javascript) to get started. Hosting is very affordable (free for low traffic).

@@ -6,6 +6,7 @@
 	import Strengths from '$lib/components/resume/Strengths.svelte';
 	import TalkingPoint from '$lib/components/resume/TalkingPoint.svelte';
 
+	import GithubSvg from '$lib/components/svg/GithubSVG.svelte';
     import EmailSvg from '$lib/components/svg/EmailSVG.svelte';
     import PhoneSvg from '$lib/components/svg/PhoneSVG.svelte';
     import LocationSvg from '$lib/components/svg/LocationSVG.svelte';
@@ -51,7 +52,7 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 							</div>
 						</div>
 						<div class="px-4 gap-4 py-4 flex md:flex-nowrap flex-wrap">
-							<div class="md:w-1/3 flex flex-col gap-4 print:justify-between">
+							<div class="md:w-1/3 flex flex-col gap-4">
 								<Section title="Profile">
 									<div class="print:text-xs">
 										Master's student and aspiring software developer in pursuit of professional
@@ -72,7 +73,38 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 							</div>
 							<div class="md:w-2/3 flex flex-col">
 								<Exprience></Exprience>
-								<Section title="Projects" leftAlignTitle={true}>
+								<Section title="Projects" icon={GithubSvg} leftAlignTitle={true}>
+									<TalkingPoint
+										title="nquandt.com"
+										company="https://github.com/nquandt/nquandt.com" 
+										date="Current">
+										<li>
+											All of the code for my website is available on github.
+										</li>										
+										<li>
+											I'm utilizing svelte as an FE framework, and vite for building as SSG.
+										</li>
+									</TalkingPoint>
+									<TalkingPoint
+										title="Quandt.Endpoints"
+										company="https://github.com/nquandt/Quandt/tree/master/src/Endpoints/Endpoints/src" 
+										date="Current">
+										<li>
+											This is an opinionated implementation of endpoints for Minimal API (.NET 6).
+										</li>
+										<li>
+											It intends to abstract the registration process of <span class="font-mono">app.MapMethod(...)</span> by utilizing a standard pattern for an "Endpoint".
+										</li>
+										<li>
+											This utilizes a new C# feature, static abstract generics to create a fluent api for creating endpoints for various needs.
+										</li>
+										<li>
+											Serialization is abstracted by allowing a user to inject an <span class="font-mono">IJsonSerializer</span> via dependency injection to handle inbound and outbound serialization.
+										</li>
+										<li>
+											I provide an <a class="nprint:underline underline-offset-2 hover:text-blue-500" href="https://github.com/nquandt/Quandt/tree/master/example/NET6">example .NET 6 project</a> utilizing this package.
+										</li>
+									</TalkingPoint>
 									<TalkingPoint
 										title="McMaster Addin For Inventor | C#"
 										company="https://github.com/nquandt/mafi"
