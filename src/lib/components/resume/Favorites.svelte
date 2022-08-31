@@ -50,7 +50,7 @@
 				<a href={fav.url} target="_blank">
 					<div class="text-md print:text-sm">{fav.display}</div>
 				</a>
-				<div class="text-sm print:text-xs text-gray-400">{fav.ecosystem}</div>
+				<div class="text-sm print:text-xs text-gray-600">{fav.ecosystem}</div>
 			</div>
 			<div class="text-sm print:text-xs">{fav.description}</div>
 		</div>

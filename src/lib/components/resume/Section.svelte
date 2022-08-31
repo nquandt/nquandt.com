@@ -10,14 +10,14 @@
 </script>
 
 <div class="w-full flex flex-col">
-    <div class="w-full flex {justify}">
+    <div class="w-full flex fill-gray-400 {justify}">
         <div class="uppercase text-xl font-bold">{title}</div>
         {#if icon}
             <svelte:component this={icon} />
         {/if}
     </div>
     <hr />
-    <div class="w-full flex flex-col px-2 gap-2 py-2">
+    <div class="w-full flex flex-col px-2 gap-[12px] py-2">
         <slot/>
     </div>
 </div>

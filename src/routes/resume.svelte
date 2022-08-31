@@ -13,6 +13,8 @@
     import LocationSvg from '$lib/components/svg/LocationSVG.svelte';
 import Skills from '$lib/components/resume/Skills.svelte';
 import Exprience from '$lib/components/resume/Exprience.svelte';
+import HomeSvg from '$lib/components/svg/HomeSVG.svelte';
+import WebSvg from '$lib/components/svg/WebSVG.svelte';
 </script>
 
 <svelte:head>
@@ -45,18 +47,20 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 										<div class="text-5xl uppercase tracking-[.4em] font-bold">Quandt</div>
 									</div>
 									<div class="flex flex-col items-end justify-between text-gray-400 fill-gray-400 font-semibold py-4">
-										<HeaderIcon text="Tempe, AZ" glyph={LocationSvg}/>
-                                        <HeaderIcon text="{variables.phone}" glyph={PhoneSvg}/>
-                                        <HeaderIcon text="{variables.email}" glyph={EmailSvg}/>
+										<HeaderIcon text="https://www.nquandt.com" glyph={WebSvg}/>
+										<HeaderIcon text="https://www.github.com/nquandt" glyph={GithubSvg}/>
+										<HeaderIcon text="Tempe, AZ" glyph={HomeSvg}/>
+                                        <!-- <HeaderIcon text="{variables.phone}" glyph={PhoneSvg}/>
+                                        <HeaderIcon text="{variables.email}" glyph={EmailSvg}/> -->
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="px-4 gap-4 py-4 flex md:flex-nowrap flex-wrap">
-							<div class="md:w-1/3 flex flex-col gap-4">
-								<Section title="Profile">
-									<div class="print:text-xs">
-										Full-Stack Developer, with an affinity towards .NET, Svelte, and algorithms, in pursuit of learning, collaboration, community, and continuous professional growth.
+						<div class="px-6 gap-6 py-6 flex md:flex-nowrap flex-wrap">
+							<div class="md:w-1/3 flex flex-col gap-6">
+								<Section title="Summary">
+									<div class="print:text-sm">
+										Full-Stack Developer, with an affinity for object-oriented development and algorithms, in pursuit of learning, collaboration, community, and continuous professional growth.
 									</div>
 								</Section>
 								<Section title="Eductation">
@@ -71,7 +75,7 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 								<!-- <Strengths />								 -->
 								<Skills />																
 							</div>
-							<div class="md:w-2/3 flex flex-col">
+							<div class="md:w-2/3 flex flex-col gap-6">
 								<Exprience></Exprience>
 								<Section title="Projects" icon={GithubSvg} leftAlignTitle={true}>
 									<TalkingPoint
