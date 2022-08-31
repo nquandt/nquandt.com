@@ -3,6 +3,7 @@
   import NavItem from './NavItem.svelte'
   import HamburgerMenuButton from './HamburgerMenuButton.svelte'
   import { siteTitle } from '$lib/config'
+  import {send, receive} from '$lib/crossfadenav';
 
   const focusMain = () => {
 		const main = document.querySelector('main');
@@ -16,7 +17,9 @@
     Skip to main content
   </a> -->
   
-  <NavItem href="/">{siteTitle}</NavItem>
+  <div in:receive={{key: "title"}} out:send={{key: "title"}}>
+    <NavItem href="/">{siteTitle}</NavItem>
+  </div>
   
   
   <!-- <HamburgerMenuButton /> -->

@@ -35,7 +35,7 @@
 <div class="layout" class:open={$isMenuOpen}>
 	{#key path}
 			<main id="main" tabindex="-1" in:fade={transitionIn} out:fade={transitionOut}>
-				<div class="flex justify-center items-center h-screen ">
+				<div class="flex absolute justify-center items-center h-screen w-screen">
 					<slot />
 				</div>
 			</main>

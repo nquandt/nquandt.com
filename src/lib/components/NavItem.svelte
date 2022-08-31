@@ -1,6 +1,6 @@
 <script>
 	import { currentPage, isMenuOpen } from '$lib/assets/js/store';
-
+	import {send, receive} from '$lib/crossfadenav';
 	export let href;
 
 	$: isCurrentPage = $currentPage.startsWith(href);
@@ -12,7 +12,7 @@
 	};
 </script>
 
-<div>
+<div in:receive={{key: href}} out:send={{key: href}}>
 	<a
 		{href}
 		on:click={maybeCloseMenu}

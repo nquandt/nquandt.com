@@ -8,7 +8,7 @@
 <!-- Contents of this file will be used in the header and the responsive hamburger menu. -->
 <nav class="main-nav flex" class:open={$isMenuOpen}>
   <div class="flex gap-2">
-    {#each navItems as page}
+    {#each navItems as page}    
     <NavItem href={page.route}>
       {@html page.title}
     </NavItem>
