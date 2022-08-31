@@ -146,7 +146,7 @@
 					on:mouseleave={(e) => onLeave(e, skill)}
 					class="flex justify-between items-center py-1"
 				>
-					<div class="text-sm">{skill.display}</div>
+					<div class="text-sm print:text-xs">{skill.display}</div>
 					<div
 						class="relative h-3 w-1/2 rounded-full bg-gray-200 before:content-[''] {i % 2 == 0
 							? 'before:bg-gray-600'

@@ -17,7 +17,7 @@
 <Section title="Strengths">
     <div class="grid grid-cols-2 gap-1">
     {#each strengths as strength}
-    <div class="text-sm">{strength}</div>
+    <div class="text-sm print:text-xs">{strength}</div>
     {/each}    
 </div>
 </Section>

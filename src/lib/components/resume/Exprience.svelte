@@ -36,8 +36,8 @@
 </script>
 
 <Section title="Experience" leftAlignTitle={true}>
-	{#each talkingPoints as point}
-		<TalkingPoint title={point.title} company={point.company} date={point.date}>
+	{#each talkingPoints as point, i}
+		<TalkingPoint title={point.title} company={point.company} date={point.date} class={i < -1 ? "print:hidden" :""}>
 			{#each point.bullets as bullet}
 				<li>{bullet}</li>
 			{/each}

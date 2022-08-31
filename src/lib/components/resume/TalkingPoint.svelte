@@ -21,7 +21,7 @@
 		<div class="text-gray-400">{date}</div>
 	</div>
 	<div class="w-full my-2">
-		<ul class="list-list text-sm">
+		<ul class="list-list text-sm print:text-xs">
 			<slot />
 		</ul>
 	</div>
