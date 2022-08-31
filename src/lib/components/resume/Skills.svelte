@@ -58,33 +58,33 @@
 		},
 		{
 			display: 'Sitecore',
-			value: 5,
+			value: 4,
 			details: [
 				'Sitecore 10.0',
 				'JSS',
 				'Microservice seperated architecture',
 				'Rendering Host vs CD vs CM'
 			]
-		},
-		{
-			display: 'Agile',
-			value: 4
-		},
+		},		
 		{
 			display: 'Solr',
-			value: 4,
+			value: 3,
 			details: ['Admin API', 'SearchStax', 'Cores/Collections/Shards']
 		},
 		{
 			display: 'Python',
-			value: 4,
+			value: 3,
 			details: ['pandas', 'numpy']
 		},
 		{
 			display: 'C',
 			value: 3,
 			details: ['GCC', 'PInvoke from .NET']
-		}
+		},
+		{
+			display: 'Agile',
+			value: 4
+		},
 	];
 
 	function fill(value) {
