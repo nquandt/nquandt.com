@@ -19,7 +19,7 @@ import Exprience from '$lib/components/resume/Exprience.svelte';
 
 <div class="w-full h-screen">
 	<Header />
-	<div class="flex flex-col w-full items-center md:p-12 p-3 overflow-y-scroll h-[calc(100vh-100px)]">
+	<div class="flex flex-col w-full items-center md:p-12 p-3 md:pb-12 pb-32 overflow-y-scroll h-[calc(100vh-100px)]">
 		<div class="border-[1px]">
 			<div id="section-to-print" class="">
 				<div class="flex w-full justify-center print:aspect-[17/22] print:overflow-hidden">
