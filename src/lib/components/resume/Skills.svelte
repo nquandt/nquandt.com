@@ -113,8 +113,7 @@
         clearTimeout(divTimeout);
 		if (skill.details) {
 			tips = skill.details || [];
-			detailDiv.style.top = e.target.offsetTop + e.target.offsetHeight / 2 + 'px';
-			console.log(e);
+			detailDiv.style.top = e.target.offsetTop + e.target.offsetHeight / 2 + 'px';			
 			delete detailDiv.dataset.state;
 		}
 	}
