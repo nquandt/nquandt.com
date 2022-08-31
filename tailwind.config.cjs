@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'top-opacity': 'opacity, top',       
+      }
+    },
   },
   plugins: [],
 }

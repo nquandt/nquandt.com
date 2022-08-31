@@ -10,7 +10,7 @@
   <div class="flex gap-2">
     {#each navItems as page}
     <NavItem href={page.route}>
-      {page.title}
+      {@html page.title}
     </NavItem>
     {/each}
   </div>

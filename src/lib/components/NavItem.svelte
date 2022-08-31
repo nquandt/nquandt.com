@@ -18,7 +18,7 @@
 		on:click={maybeCloseMenu}
 		aria-current={isCurrentPage ? 'page' : false}
 	>
-  <div class="flex justify-center items-center w-[80px] h-[80px] bg-slate-300">
+  <div class="flex justify-center items-center w-[100px] h-[40px] bg-slate-600 rounded-md text-white">
 		<slot />
   </div>
 	</a>

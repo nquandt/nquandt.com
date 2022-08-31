@@ -11,7 +11,7 @@
 </script>
 
 
-<header class="flex justify-center gap-4 p-4 bg-gray-800 text-white">
+<header class="flex justify-center gap-4 bg-gray-800 text-white items-center h-[100px]">
   <!-- <a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
     Skip to main content
   </a> -->

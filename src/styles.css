@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+    .list-list {
+        list-style-type: disc;
+        list-style-position: inside;
+        text-indent: -3em;
+        padding-left: 3em;
+      }
+
+      [data-state="opaque"] {
+          opacity: 0;
+      }
+}
+
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #section-to-print, #section-to-print * {
+      visibility: visible;
+    }
+    #section-to-print {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
     p,
     h1,
     h2,

@@ -33,7 +33,7 @@
 	}
 </script>
 <div class="layout" class:open={$isMenuOpen}>
-	{#key blog}
+	{#key path}
 			<main id="main" tabindex="-1" in:fade={transitionIn} out:fade={transitionOut}>
 				<div class="flex justify-center items-center h-screen ">
 					<slot />
