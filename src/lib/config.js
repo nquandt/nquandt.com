@@ -9,6 +9,10 @@ export const navItems = [
   {
     title: 'Resum&eacute;',
     route: '/resume'
+  },
+  {
+    title: 'Examples',
+    route: '/examples'
   }
   // {
   //   title: 'Blog',

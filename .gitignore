@@ -5,6 +5,4 @@ node_modules
 /package
 
 .env
-
-/api
 /.api

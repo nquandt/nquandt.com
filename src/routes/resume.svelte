@@ -21,7 +21,7 @@ import WebSvg from '$lib/components/svg/WebSVG.svelte';
 	<title>Quandt | Resum&eacute;</title>
 </svelte:head>
 
-<div class="w-full h-screen">
+<div class="absolute w-full h-screen">
 	<Header />
 	<div class="flex flex-col w-full items-center md:p-12 p-3 md:pb-12 pb-32 overflow-y-scroll h-[calc(100vh-100px)]">
 		<div class="border-[1px]">
