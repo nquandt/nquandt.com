@@ -63,7 +63,7 @@ import WebSvg from '$lib/components/svg/WebSVG.svelte';
 										Full-Stack Developer, with an affinity for object-oriented development and algorithms, in pursuit of learning, collaboration, community, and continuous professional growth.
 									</div>
 								</Section>
-								<Section title="Eductation">
+								<Section title="Education">
 									<div class="flex flex-col">
 										<div class="print:text-sm font-bold">Marquette University</div>
 										<div class="print:text-xs text-sm text-gray-400">Milwaukee, WI USA</div>
