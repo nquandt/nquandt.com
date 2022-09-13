@@ -1,6 +1,6 @@
 <script>
 	import Section from './Section.svelte';
-    	
+
 	let skills = [
 		{
 			display: '.NET',
@@ -65,7 +65,7 @@
 				'Microservice seperated architecture',
 				'Rendering Host vs CD vs CM'
 			]
-		},		
+		},
 		{
 			display: 'Solr',
 			value: 3,
@@ -84,7 +84,7 @@
 		{
 			display: 'Agile',
 			value: 4
-		},
+		}
 	];
 
 	function fill(value) {
@@ -108,20 +108,20 @@
 
 	let tips = [];
 	let detailDiv = null;
-    let divTimeout = null;
+	let divTimeout = null;
 	function onEnter(e, skill) {
-        clearTimeout(divTimeout);		
+		clearTimeout(divTimeout);
 		if (skill?.details) {
 			tips = skill.details || [];
-			detailDiv.style.top = e.target.offsetTop + e.target.offsetHeight / 2 + 'px';			
+			detailDiv.style.top = e.target.offsetTop + e.target.offsetHeight / 2 + 'px';
 			delete detailDiv.dataset.state;
 		}
 	}
 
 	function onLeave(skill) {
-        divTimeout = setTimeout(() => {
-            detailDiv.dataset.state = 'opaque';
-        }, 400);	
+		divTimeout = setTimeout(() => {
+			detailDiv.dataset.state = 'opaque';
+		}, 400);
 	}
 </script>
 
@@ -134,7 +134,9 @@
 			on:mouseleave={(e) => onLeave(e)}
 			class="hidden absolute z-10 md:flex flex-col left-full -translate-y-1/2 p-4 transition-top-opacity opacity-100 duration-[.4s]"
 		>
-			<div class="relative p-2 bg-white rounded-md border-2 border-gray-300 after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-x-full after:-translate-y-1/2 after:border-[12px] after:border-r-white after:border-l-transparent after:border-y-transparent before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-x-full before:-translate-y-1/2 before:border-[15px] before:border-r-gray-300 before:border-l-transparent before:border-y-transparent">
+			<div
+				class="relative p-2 bg-white rounded-md border-2 border-gray-300 after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-x-full after:-translate-y-1/2 after:border-[12px] after:border-r-white after:border-l-transparent after:border-y-transparent before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-x-full before:-translate-y-1/2 before:border-[15px] before:border-r-gray-300 before:border-l-transparent before:border-y-transparent"
+			>
 				{#each tips as tip}
 					<div class="whitespace-nowrap">{tip}</div>
 				{/each}

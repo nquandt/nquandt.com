@@ -12,7 +12,7 @@ const config = {
 
 	preprocess: [
 		preprocess({
-			postcss: true,
+			postcss: true
 			// scss: {
 			// 	// Ensures Sass variables are always available inside component <style> blocks as vars.$variableDefinedInFile
 			// 	prependData: `@use 'src/lib/assets/scss/vars';`
@@ -23,15 +23,16 @@ const config = {
 			extensions: ['.svx', '.md'],
 
 			// Adds IDs to headings, and anchor links to those IDs. Note: must stay in this order to work.
-			rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, [rehypeExternalLinks, { target: "_blank"}]]
+			rehypePlugins: [
+				rehypeSlug,
+				rehypeAutolinkHeadings,
+				[rehypeExternalLinks, { target: '_blank' }]
+			]
 		})
 	],
 
 	kit: {
 		inlineStyleThreshold: 8192,
-		prerender: {
-			default: true
-		},
 		adapter: adapter()
 	}
 };

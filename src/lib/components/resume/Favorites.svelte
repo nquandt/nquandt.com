@@ -19,7 +19,7 @@
 			url: 'https://github.com/dotnet/core',
 			description: 'The open-source ecosystem powering all things C#.',
 			ecosystem: '.NET',
-            class: 'print:hidden'
+			class: 'print:hidden'
 		},
 		{
 			display: 'Astro',
@@ -32,13 +32,13 @@
 			url: 'https://github.com/sveltejs/svelte',
 			description: 'My FE framework of choice. ',
 			ecosystem: 'Javascript',
-            class: 'print:hidden'
+			class: 'print:hidden'
 		},
 		{
 			display: 'Rollup',
 			url: 'https://github.com/rollup/rollup',
 			description: 'An all purpose bundler for TS and JS.',
-			ecosystem: 'Javascript'            
+			ecosystem: 'Javascript'
 		}
 	];
 </script>

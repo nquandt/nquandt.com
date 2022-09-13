@@ -1,11 +1,11 @@
 let favoritesPromise = null;
 
 export async function getFavorites() {
-    if (!favoritesPromise){
-        favoritesPromise = _getFavorites();
-    }
+	if (!favoritesPromise) {
+		favoritesPromise = _getFavorites();
+	}
 
-    return await favoritesPromise;
+	return await favoritesPromise;
 }
 
 async function _getFavorites() {
@@ -16,9 +16,9 @@ async function _getFavorites() {
 		})
 	});
 
-    if (res.ok) {
-        return await res.json();
-    }else{
-        throw new Error();
-    }
+	if (res.ok) {
+		return await res.json();
+	} else {
+		throw new Error();
+	}
 }
