@@ -22,9 +22,9 @@
 	<title>Quandt | Resum&eacute;</title>
 </svelte:head>
 
-<div
+<section
 	transition:fade
-	class="absolute flex flex-col w-full items-center md:p-12 p-3 md:pb-12 pb-32 overflow-auto print:overflow-y-hidden h-[calc(100vh-100px)]"
+	class="absolute bgPrimary flex flex-col items-center w-full md:p-12 p-3 md:pb-12 pb-32 overflow-auto print:overflow-y-hidden h-[calc(100vh-100px)]"
 >
 	<div class="border-[1px]">
 		<div id="section-to-print" class="">
@@ -49,13 +49,13 @@
 								class="flex md:flex-row flex-col w-full items-center md:justify-between md:border-x-[1px] border-gray-400 md:px-4"
 							>
 								<div class="flex flex-col gap-2 py-4 justify-between md:items-start items-center">
-									<div class="text-3xl uppercase tracking-[.3em] text-gray-400 font-semibold">
+									<div class="text-3xl uppercase tracking-[.3em] textSecondary font-semibold">
 										Nicholas
 									</div>
 									<div class="text-5xl uppercase tracking-[.4em] font-bold">Quandt</div>
 								</div>
 								<div
-									class="flex flex-col items-end justify-between text-gray-400 fill-gray-400 font-semibold py-4"
+									class="flex flex-col items-end justify-between textSecondary fillSecondary font-semibold py-4"
 								>
 									<HeaderIcon text="https://www.nquandt.com" glyph={WebSvg} />
 									<HeaderIcon text="https://www.github.com/nquandt" glyph={GithubSvg} />
@@ -78,7 +78,7 @@
 							<Section title="Education">
 								<div class="flex flex-col">
 									<div class="print:text-sm font-bold">Marquette University</div>
-									<div class="print:text-xs text-sm text-gray-400">Milwaukee, WI USA</div>
+									<div class="print:text-xs text-sm textSecondary">Milwaukee, WI USA</div>
 									<div class="print:text-xs text-sm">2021 / M.S. in Computer Science</div>
 									<div class="print:text-xs text-sm">2019 / B.S. in Mathematics</div>
 								</div>
@@ -184,4 +184,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>

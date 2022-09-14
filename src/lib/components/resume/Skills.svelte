@@ -151,9 +151,9 @@
 				>
 					<div class="text-sm print:text-xs">{skill.display}</div>
 					<div
-						class="relative h-3 w-1/2 rounded-full bg-gray-200 before:content-[''] {i % 2 == 0
-							? 'before:bg-gray-600'
-							: 'before:bg-gray-400'} before:absolute before:left-0 before:top-0 before:bottom-0 {fill(
+						class="relative h-3 w-1/2 rounded-full fourColor before:content-[''] {i % 2 == 0
+							? 'before:primaryColor'
+							: 'before:tertiaryColor'} before:absolute before:left-0 before:top-0 before:bottom-0 {fill(
 							skill.value
 						)} before:rounded-full"
 					/>

@@ -15,7 +15,7 @@
 	<title>Examples | Quandt</title>
 </svelte:head>
 
-<div transition:fade class="absolute flex flex-col justify-center items-center p-16">
+<flexc transition:fade class="absolute p-16 bgPrimary min-h-full justify-start">
 	<div>
 		This page only exists to show an example of using an Azure Function as an API for a sveltkit SSG
 		application.
@@ -30,7 +30,7 @@
 			tree-shakes any code within this method, i.e. it doesn't even exist as far as the
 			@adapter-static is concerned.
 		</div>
-		<div class="flex flex-col items-center w-1/2 border-2 py-20">
+		<flexc class="w-1/2 border-2 py-20">
 			{#if favoritePromise}
 				{#await favoritePromise}
 					<div out:fade>LOADING</div>
@@ -44,6 +44,6 @@
 					<div>Error</div>
 				{/await}
 			{/if}
-		</div>
+		</flexc>
 	</div>
-</div>
+</flexc>

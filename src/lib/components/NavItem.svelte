@@ -14,10 +14,10 @@
 
 <div in:receive={{ key: href }} out:send={{ key: href }}>
 	<a {href} on:click={maybeCloseMenu} aria-current={isCurrentPage ? 'page' : false}>
-		<div
-			class="flex justify-center items-center w-[100px] h-[40px] bg-slate-600 rounded-md text-white"
+		<flex
+			class="w-[100px] h-[40px] primaryColor rounded-md textAccent z-50"
 		>
 			<slot />
-		</div>
+		</flex>
 	</a>
 </div>

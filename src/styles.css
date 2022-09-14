@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer components {	
 	a[target='_blank'] {
-		@apply nprint:underline underline-offset-2 hover:text-blue-500 transition-colors;
+		@apply nprint:underline underline-offset-2 hover:text-blue-500;
 	}
 
 	ul {
 		@apply list-list text-sm print:text-xs;
 	}
+
+	flex {
+		@apply flex flex-row justify-center items-center;
+	}
+
+	flexc {
+		@apply flex flex-col justify-center items-center;
+	}	
 }
 
 @layer utilities {
@@ -22,6 +30,57 @@
 
 	[data-state='opaque'] {
 		opacity: 0;
+	}
+
+	.primaryColor {
+		transition-property: background-color;
+		transition-duration: 400ms;
+		background-color: var(--color-primary);
+	}
+	
+	.secondaryColor {
+		transition-property: background-color;
+		transition-duration: 400ms;
+		background-color: var(--color-secondary);
+	}
+
+	.tertiaryColor {
+		transition-property: background-color;
+		transition-duration: 400ms;
+		background-color: var(--color-tertiary);
+	}
+
+	.fourColor {
+		transition-property: background-color;
+		transition-duration: 400ms;
+		background-color: var(--color-four);
+	}
+
+	.bgPrimary {
+		transition-property:background-color;
+		transition-duration: 400ms;
+		background-color: var(--bg-primary);
+	}
+
+	.textPrimary {
+		transition-property: color;
+		transition-duration: 400ms;
+		color: var(--text-primary);
+	}
+
+	.textSecondary {
+		transition-property: color;
+		transition-duration: 400ms;
+		color: var(--text-secondary);
+	}
+	.textAccent {
+		transition-property: color;
+		transition-duration: 400ms;
+		color: var(--text-accent);
+	}
+
+	.fillSecondary {
+		fill: var(--text-secondary);
 	}
 }
 
@@ -50,6 +109,8 @@
 	}
 }
 
+
+
 p,
 h1,
 h2,
@@ -58,7 +119,7 @@ div {
 	font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
-body * {
+section {
 	scrollbar-gutter: stable;
 }
 
