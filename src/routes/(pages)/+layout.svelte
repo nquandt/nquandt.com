@@ -6,7 +6,7 @@
 <div class="absolute w-full h-screen">
 	<Header />
 	<span class="w-full" transition:fade>
-		<div class="bg-gray-800 absolute w-full h-[100px] top-0 left-0 z-[-1]" />
+		<div class="bg-gray-800 absolute w-full h-[100px] top-0 left-0 z-[-1] print:hidden" />
 		<slot />
 	</span>
 </div>
