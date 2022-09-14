@@ -24,7 +24,7 @@
 
 <div
 	transition:fade
-	class="absolute flex flex-col w-full items-center md:p-12 p-3 md:pb-12 pb-32 overflow-y-scroll print:overflow-y-hidden h-[calc(100vh-100px)]"
+	class="absolute flex flex-col w-full items-center md:p-12 p-3 md:pb-12 pb-32 overflow-auto print:overflow-y-hidden h-[calc(100vh-100px)]"
 >
 	<div class="border-[1px]">
 		<div id="section-to-print" class="">

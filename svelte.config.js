@@ -11,7 +11,7 @@ const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 
 	preprocess: [
-		preprocess({
+		preprocess({			
 			postcss: true
 			// scss: {
 			// 	// Ensures Sass variables are always available inside component <style> blocks as vars.$variableDefinedInFile
