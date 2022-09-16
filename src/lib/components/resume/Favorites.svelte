@@ -47,7 +47,7 @@
 	{#each favorites as fav}
 		<div class={fav.class}>
 			<div class="flex justify-between">
-				<a href={fav.url} target="_blank">
+				<a class="textPrimary" href={fav.url} target="_blank">
 					<div class="text-md print:text-sm">{fav.display}</div>
 				</a>
 				<div class="text-sm print:text-xs textSecondary">{fav.ecosystem}</div>

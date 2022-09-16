@@ -32,7 +32,7 @@
 				<div class="flex flex-col max-w-[900px]">
 					<div class="relative flex-shrink-0 overflow-hidden border-b-2 border-gray-300">
 						<div class="top-0 left-0 w-full h-full flex justify-center items-center absolute">
-							<picture class="w-full h-full">
+							<picture class="w-full h-full opacityDuller">
 								<source media="(max-width: 768px)" srcset="/resume-780w.webp" />
 								<source media="(max-width: 1400px)" srcset="/resume-1400w.webp" />
 								<source media="(max-width: 1920px)" srcset="/resume-1920w.webp" />
@@ -129,7 +129,7 @@
 											> via dependency injection to handle inbound and outbound serialization.
 										</li>
 										<li>
-											A <a href="https://github.com/nquandt/Quandt/tree/master/example/NET6"
+											A <a class="textPrimary" href="https://github.com/nquandt/Quandt/tree/master/example/NET6"
 												>.NET 6 example project</a
 											> utilizing this package is available on github under the "examples" folder.
 										</li>

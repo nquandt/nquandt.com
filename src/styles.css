@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {	
+@layer components {
 	a[target='_blank'] {
-		@apply nprint:underline underline-offset-2 hover:text-blue-500;
+		@apply nprint:underline underline-offset-2 hover:text-blue-500;		
 	}
 
 	ul {
@@ -17,7 +17,7 @@
 
 	flexc {
 		@apply flex flex-col justify-center items-center;
-	}	
+	}
 }
 
 @layer utilities {
@@ -37,7 +37,7 @@
 		transition-duration: 400ms;
 		background-color: var(--color-primary);
 	}
-	
+
 	.secondaryColor {
 		transition-property: background-color;
 		transition-duration: 400ms;
@@ -57,7 +57,7 @@
 	}
 
 	.bgPrimary {
-		transition-property:background-color;
+		transition-property: background-color;
 		transition-duration: 400ms;
 		background-color: var(--bg-primary);
 	}
@@ -66,6 +66,10 @@
 		transition-property: color;
 		transition-duration: 400ms;
 		color: var(--text-primary);
+	}
+
+	.opacityDuller {
+		opacity: var(--opacity-duller);
 	}
 
 	.textSecondary {
@@ -80,6 +84,8 @@
 	}
 
 	.fillSecondary {
+		transition-property: color;
+		transition-duration: 400ms;
 		fill: var(--text-secondary);
 	}
 }
@@ -109,8 +115,6 @@
 	}
 }
 
-
-
 p,
 h1,
 h2,
@@ -125,13 +129,13 @@ section {
 
 ::-webkit-scrollbar {
 	width: 16px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
 	border: 4px solid transparent;
 	border-radius: 8px;
 	box-shadow: inset 0 0 16px rgba(80, 80, 80, 0.5);
-  }
+}
 /* latin */
 @font-face {
 	font-family: 'Lato';

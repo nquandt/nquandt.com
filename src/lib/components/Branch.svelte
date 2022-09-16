@@ -18,7 +18,7 @@
 			{/if}
 		</div>
 		{#if branch.slug}
-			<a class="italic" href="/blog/{branch.slug}">{branch.name}</a>
+			<a class="italic textPrimary" href="/blog/{branch.slug}">{branch.name}</a>
 		{:else}
 			<div>{branch.name}</div>
 		{/if}
