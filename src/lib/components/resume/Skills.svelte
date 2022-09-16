@@ -135,7 +135,7 @@
 			class="hidden absolute z-10 md:flex flex-col left-full -translate-y-1/2 p-4 transition-top-opacity opacity-100 duration-[.4s]"
 		>
 			<div
-				class="relative p-2 bg-white rounded-md border-2 border-gray-300 after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-x-full after:-translate-y-1/2 after:border-[12px] after:border-r-white after:border-l-transparent after:border-y-transparent before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-x-full before:-translate-y-1/2 before:border-[15px] before:border-r-gray-300 before:border-l-transparent before:border-y-transparent"
+				class="relative p-2 bgPrimary rounded-md border-2 border-gray-300 after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-x-full after:-translate-y-1/2 after:border-[12px] after:border-r-white after:border-l-transparent after:border-y-transparent before:content-[''] before:absolute before:top-1/2 before:left-0 before:-translate-x-full before:-translate-y-1/2 before:border-[15px] before:border-r-gray-300 before:border-l-transparent before:border-y-transparent"
 			>
 				{#each tips as tip}
 					<div class="whitespace-nowrap">{tip}</div>
