@@ -29,14 +29,14 @@
 				<div class="flex flex-col max-w-[900px]">
 					<ResumeHeaders {...config} />
 					<TwoThirdsColumns>
-						<span slot="column-one">
+						<span slot="column-one" class="flex flex-col gap-6 print:gap-4">
 							<Summary {...config} />
 							<Education />
 							<Favorites />
 							<!-- <Strengths />								 -->
 							<Skills />
 						</span>
-						<span slot="column-two">
+						<span slot="column-two" class="flex flex-col gap-6 print:gap-4">
 							<Exprience />
 							<Projects />							
 						</span>
