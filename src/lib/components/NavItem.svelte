@@ -13,7 +13,12 @@
 </script>
 
 <div in:receive={{ key: href }} out:send={{ key: href }}>
-	<a class="textPrimary" {href} on:click={maybeCloseMenu} aria-current={isCurrentPage ? 'page' : false}>
+	<a
+		class="textPrimary"
+		{href}
+		on:click={maybeCloseMenu}
+		aria-current={isCurrentPage ? 'page' : false}
+	>
 		<flex class="px-4 h-[40px] primaryColor rounded-md textAccent z-50">
 			<slot />
 		</flex>

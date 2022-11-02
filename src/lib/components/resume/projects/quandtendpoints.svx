@@ -1,0 +1,21 @@
+---
+title: 'Quandt.Endpoints'
+company: 'https://github.com/nquandt/Quandt/tree/master/src/Endpoints/Endpoints/src'
+date: 'Current'
+---
+<script>
+    export let index;
+    import TalkingPoint from '../TalkingPoint.svelte';
+</script>
+
+
+<TalkingPoint {title} {company} {date} {index}>
+
+- This is an opinionated implementation of endpoints for Minimal API (.NET 6), where one route equates to one file (endpoint).
+- It intends to abstract the registration process of `app.MapMethod(...)` by utilizing a standard pattern for an "Endpoint".
+- This utilizes a new C# feature, static abstract generics to create a fluent api for creating endpoints for various needs.
+- The endpoints provide full dependency resolution via typical constructor injection.
+- Serialization is abstracted by allowing a user to inject an `IJsonSerializer` via dependency injection to handle inbound and outbound serialization.
+- A [.NET 6 example project](https://github.com/nquandt/Quandt/tree/master/example/NET6) utilizing this package is available on github under the "examples" folder.
+
+</TalkingPoint>

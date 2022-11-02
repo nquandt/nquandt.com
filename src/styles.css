@@ -4,7 +4,7 @@
 
 @layer components {
 	a[target='_blank'] {
-		@apply nprint:underline underline-offset-2 hover:text-blue-500;		
+		@apply nprint:underline underline-offset-2 hover:text-blue-500;
 	}
 
 	ul {

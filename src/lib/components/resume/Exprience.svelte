@@ -1,6 +1,6 @@
 <script>
 	import Section from './Section.svelte';
-	import TalkingPoint from './TalkingPoint.svelte';
+		
 	import MilwaukeeToolBullets from './jobs/MilwaukeeToolBullets.svx';
 	import JensenBullets from './jobs/JensenBullets.svx';
 	import UnitedToolBullets from './jobs/UnitedToolBullets.svx';

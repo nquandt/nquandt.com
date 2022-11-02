@@ -1,0 +1,18 @@
+---
+title: 'Parallel Functions | C (gcc)'
+company: 'https://github.com/nquandt/parallel-functionss'
+date: 'April 2021'
+---
+<script>
+    export let index;
+    import TalkingPoint from '../TalkingPoint.svelte';
+</script>
+
+
+<TalkingPoint {title} {company} {date} {index}>
+
+- Parallel implementations of mathematical functions taken over a set of values.
+- Optimized for `WORD` sized values.
+- <pre>Example `\>\_: setgcd 42 91 77 140`    output: `7`</pre>
+
+</TalkingPoint>

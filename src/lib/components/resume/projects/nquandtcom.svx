@@ -1,0 +1,17 @@
+---
+title: 'nquandt.com'
+company: 'https://www.nquandt.com'
+date: 'Current'
+---
+<script>
+    export let index;
+    import TalkingPoint from '../TalkingPoint.svelte';
+</script>
+
+
+<TalkingPoint {title} {company} {date} {index}>
+
+- All of the code for my website is available on github.
+- I'm utilizing svelte as an FE framework, and vite for building as SSG.
+
+</TalkingPoint>
