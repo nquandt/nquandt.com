@@ -15,17 +15,17 @@
 			class: 'print:hidden'
 		},
 		{
-			display: '.NET Core',
-			url: 'https://github.com/dotnet/core',
-			description: 'The open-source ecosystem powering all things C#.',
-			ecosystem: '.NET',
-			class: 'print:hidden'
+			display: 'YARP',
+			url: 'https://github.com/microsoft/reverse-proxy',
+			description: 'A reverse-proxy in C#',
+			ecosystem: '.NET',			
 		},
 		{
 			display: 'Astro',
 			url: 'https://astro.build/',
 			description: 'A new framework for building SSG and SSR sites with various FE frameworks.',
-			ecosystem: 'The Edge'
+			ecosystem: 'The Edge',
+			class: 'print:hidden'
 		},
 		{
 			display: 'Svelte',

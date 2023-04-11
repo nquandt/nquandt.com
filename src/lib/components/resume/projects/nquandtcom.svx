@@ -13,5 +13,6 @@ date: 'Current'
 
 - All of the code for my website is available on github.
 - I'm utilizing svelte as an FE framework, and vite for building as SSG.
+- Deployed as a Azure Static Web Application
 
 </TalkingPoint>

@@ -4,7 +4,7 @@
 	import { fade } from 'svelte/transition';
 
 	import Favorites from '$lib/components/resume/Favorites.svelte';
-	import Skills from '$lib/components/resume/Skills.svelte';
+	import Skills2 from '$lib/components/resume/Skills2.svelte';
 	import Exprience from '$lib/components/resume/Exprience.svelte';
 	import ResumeHeaders from '$lib/components/resume/ResumeHeaders.svelte';
 	import TwoThirdsColumns from '$lib/components/TwoThirdsColumns.svelte';
@@ -21,7 +21,7 @@
 
 <section
 	transition:fade
-	class="absolute bgPrimary flex flex-col items-center w-full md:p-12 p-3 md:pb-12 pb-32 overflow-auto print:overflow-y-hidden h-[calc(100vh-100px)]"
+	class="absolute bgPrimary flex flex-col items-center w-full md:p-12 p-3 md:pb-12 pb-32 overflow-auto print:overflow-y-hidden h-[calc(100vh-100px)] print:h-full"
 >
 	<div class="border-[1px]">
 		<div id="section-to-print" class="">
@@ -31,10 +31,10 @@
 					<TwoThirdsColumns>
 						<span slot="column-one" class="flex flex-col gap-6 print:gap-4">
 							<Summary {...config} />
-							<Education />
-							<Favorites />
+							<Education />							
 							<!-- <Strengths />								 -->
-							<Skills />
+							<Skills2 />
+							<Favorites />
 						</span>
 						<span slot="column-two" class="flex flex-col gap-6 print:gap-4">
 							<Exprience />
