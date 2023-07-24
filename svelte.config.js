@@ -13,9 +13,9 @@ const config = {
 	preprocess: [
 		preprocess({
 			postcss: true,
-			scss: {
-				includePaths: ['theme']				
-			},
+			// scss: {
+			// 	includePaths: ['theme']				
+			// },
 		}),
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.

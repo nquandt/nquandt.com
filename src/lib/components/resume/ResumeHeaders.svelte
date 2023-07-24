@@ -5,8 +5,6 @@
 	export let website;
 	export let location;
 
-	import { Divider } from 'svelte-materialify';
-
 	import HomeSvg from '$lib/components/svg/HomeSVG.svelte';
 	import WebSvg from '$lib/components/svg/WebSVG.svelte';
 	import HeaderIcon from '$lib/components/resume/HeaderIcon.svelte';
@@ -14,6 +12,7 @@
 	import EmailSvg from '$lib/components/svg/EmailSVG.svelte';
 	import PhoneSvg from '$lib/components/svg/PhoneSVG.svelte';
 	import LocationSvg from '$lib/components/svg/LocationSVG.svelte';
+	import Vl from '$lib/components/VL.svelte';
 </script>
 
 <div class="relative flex-shrink-0 overflow-hidden border-b-2 border-gray-300">
@@ -61,9 +60,9 @@
 			</div>
 			<div class="flex items-center gap-4 justify-between textSecondary fillSecondary font-semibold py-2">
 				<a href="https://www.{website}">{website}</a>
-				<Divider vertical />
+				<Vl></Vl>
 				<a href="https://www.github.com/{github}">github.com/{github}</a>
-				<Divider vertical />
+				<Vl></Vl>
 				{location}
 				<!-- <HeaderIcon text="{variables.phone}" glyph={PhoneSvg}/>
                     <HeaderIcon text="{variables.email}" glyph={EmailSvg}/> -->
