@@ -12,7 +12,7 @@
 			url: 'https://github.com/trullock/NUglify',
 			description: 'A JS, CSS, and HTML minifier for .NET.',
 			ecosystem: '.NET',
-			class: 'print:hidden'
+			// class: 'print:hidden'
 		},
 		{
 			display: 'YARP',
@@ -25,14 +25,14 @@
 			url: 'https://astro.build/',
 			description: 'A new framework for building SSG and SSR sites with various FE frameworks.',
 			ecosystem: 'The Edge',
-			class: 'print:hidden'
+			// class: 'print:hidden'
 		},
 		{
 			display: 'Svelte',
 			url: 'https://github.com/sveltejs/svelte',
 			description: 'My FE framework of choice. ',
 			ecosystem: 'Javascript',
-			class: 'print:hidden'
+			// class: 'print:hidden'
 		},
 		{
 			display: 'Rollup',

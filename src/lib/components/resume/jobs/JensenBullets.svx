@@ -1,6 +1,6 @@
 ---
-title: 'Sales Analyst'
-company: 'Jensen Equipment Inc.'
+title: 'Software Engineer'
+company: 'Jensen Equipment Company Inc.'
 date: 'January 2019 - August 2021'
 ---
 <script>
@@ -9,11 +9,11 @@ date: 'January 2019 - August 2021'
 </script>
 
 
-<TalkingPoint {title} {company} {date} {index}>
+<TalkingPoint print {title} {company} {date} {index}>
 
-- Maintain product data and costs for thousands of records in ERP software from vendors such as Snap-On, Ridgid, Milwaukee, etc.
+- Create internal tooling to manage and migrate ecommerce product data between homegrown SQL and external vendors' REST api, via .NET WinForms and Entity Framework. 
+- Primary focus was inventory management and pricing synchronization between various ecommerce platforms via central database.
 - Analyze ecommerce seller fees and shipping costs to set competitive retail prices to increase sales while maximizing profitability.
-- Design and implement an interface for SQL Database using C# to replace old interface and export vendor, customer, and item records for migration to a new ERP system.
-- Implement Amazon REST API(Amazon MWS) resources in order to improve inventory management and order analysis.
+- Plan and execute a migration to Acumatica ERP system from homegrown system.
 
 </TalkingPoint>

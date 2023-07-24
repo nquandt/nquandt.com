@@ -3,16 +3,15 @@
     import GithubSvg from "$lib/components/svg/GithubSVG.svelte";
 
     import NQuandtProject from './projects/nquandtcom.svx';
-    import quandtendpoints from './projects/quandtendpoints.svx';
+    // import quandtendpoints from './projects/quandtendpoints.svx';
     import mcmaster from './projects/mcmasteraddin.svx';
 	// import parallel from './projects/parallelgcc.svx';
 
-	//let talkingPoints = [NQuandtProject, JensenBullets, UnitedToolBullets];
+	let talkingPoints = [NQuandtProject, mcmaster];
 </script>
 
 <Section title="Projects" icon={GithubSvg} leftAlignTitle={true}>
-    <svelte:component this={NQuandtProject}/>
-    <svelte:component this={quandtendpoints}/>
-    <svelte:component this={mcmaster}/>
-    <!-- <svelte:component this={parallel}/>     -->
+    {#each talkingPoints as point, i}
+		<svelte:component this={point} index={i} />
+	{/each}
 </Section>

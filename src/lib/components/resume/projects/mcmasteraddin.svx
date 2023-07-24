@@ -11,10 +11,9 @@ date: 'December 2019'
 
 <TalkingPoint {title} {company} {date} {index}>
 
-- Interop Add-In for Autodesk Inventor developed with C#.
+- Interop Add-In for Autodesk Inventor developed with C# with XAML WinForms for UI.
 - Implements CEFSharp to embed a chromium based browser for both user interaction and headless methods.
-- Utilizes chromium's ability to bidirectionally invoke commands in the parent C# application from page-level javascript. Script injection is used to link commands between the webpage and application.
-- Primary UI utilizes XAML WinForms.
-- Embedded assemblies are used to minimize number of files needed to install. These are loaded into memory at runtime to maintain version correctness.            
+- Utilizes chromium's ability to bidirectionally invoke commands in the parent C# application from page-level javascript (effetively MVC). Script injection is used to link commands between the webpage and application.
+- Embedded assemblies are used to minimize number of files needed to install. These are loaded into memory at runtime to maintain version correctness (Reflection).
 
 </TalkingPoint>

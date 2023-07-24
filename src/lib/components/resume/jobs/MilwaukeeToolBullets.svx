@@ -9,7 +9,7 @@ date: 'August 2021 - Present'
 </script>
 
 
-<TalkingPoint {title} {company} {date} {index} url="https://www.milwaukeetool.com">
+<TalkingPoint print {title} {company} {date} {index} url="https://www.milwaukeetool.com">
 
 - Maintain a multi-site [Sitecore 10 XM](https://www.sitecore.com/products/experience-manager?utm_websource=products) topology in kubernetes ([AKS](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes)), with full server side rendering via. [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-6.0).
 - Scope and initiate an incremental migration from [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-6.0) pages to [NextJS](https://nextjs.org/) as our primary application host. This migration aims to adopt a headless philosophy by seperating our CMS from our rendering host.
@@ -19,7 +19,7 @@ date: 'August 2021 - Present'
 - Implement a new development workflow, to allow the use of various Front-End frameworks for our site. Achieved through the use of [Gulp](https://gulpjs.com/) and [Rollup](https://rollupjs.org/).
 - Integrate our .NET application with [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/basic-concepts) for key, secret, and certificate maintainance and security.
 - Strategize and execute a site wide migration from Brightcove to Vimeo as a video hosting platform, including library migration.
-- Implement and standardize health checks in our microservice applications to prevent cold starts on kubernetes.
+- Implement and standardize health checks in our microservice applications to prevent cold starts and downtime on kubernetes.
 - Give monthly lunch'n'learn talks to the greater web dev team on various topics including: general development practice, new technologies, coding principles, etc.
 
 </TalkingPoint>

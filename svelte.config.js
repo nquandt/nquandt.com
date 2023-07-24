@@ -12,11 +12,10 @@ const config = {
 
 	preprocess: [
 		preprocess({
-			postcss: true
-			// scss: {
-			// 	// Ensures Sass variables are always available inside component <style> blocks as vars.$variableDefinedInFile
-			// 	prependData: `@use 'src/lib/assets/scss/vars';`
-			// },
+			postcss: true,
+			scss: {
+				includePaths: ['theme']				
+			},
 		}),
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.

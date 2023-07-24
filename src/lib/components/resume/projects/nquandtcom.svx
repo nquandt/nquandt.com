@@ -1,6 +1,6 @@
 ---
 title: 'nquandt.com'
-company: 'https://www.nquandt.com'
+company: 'https://www.github.com/nquandt/nquandt.com'
 date: 'Current'
 ---
 <script>
@@ -9,10 +9,10 @@ date: 'Current'
 </script>
 
 
-<TalkingPoint {title} {company} {date} {index}>
+<TalkingPoint print {title} {company} {date} {index}>
 
 - All of the code for my website is available on github.
 - I'm utilizing svelte as an FE framework, and vite for building as SSG.
-- Deployed as a Azure Static Web Application
+- Deployed as an Azure Static Web Application.
 
 </TalkingPoint>

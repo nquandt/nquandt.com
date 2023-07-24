@@ -6,9 +6,10 @@
 	export let company;
 	export let url;
 	export let index;
+	export let print;
 </script>
 
-<div class="flex flex-col w-full {clazz}">
+<div class="flex flex-col w-full {clazz} {print ? '' : 'print:hidden'}">
 	<div class="flex justify-between item">
 		<div class="flex flex-col">
 			{#if company.startsWith('https://')}
@@ -28,7 +29,7 @@
 		</div>
 		<div class="textSecondary text-end">{date}</div>
 	</div>
-	<div class="w-full pt-2 {index >= 1 ? 'print:hidden' : ''}">
+	<div class="w-full pt-2">
 		<slot />
 	</div>
 </div>
