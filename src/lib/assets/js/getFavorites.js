@@ -9,7 +9,7 @@ export async function getFavorites() {
 }
 
 async function _getFavorites() {
-	let res = await fetch('api/GenericCatalogApi', {
+	let res = await fetch('api/authexample', {
 		method: 'POST',
 		body: JSON.stringify({
 			returnAll: true
