@@ -26,14 +26,14 @@ namespace NQuandt.Functions
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            if (!req.Headers.TryGetValue("Z-Proxy-Authorization", out var auth))
+            if (!req.Headers.TryGetValue("Z-Proxy-Authorization", out var auth) || !auth[0].StartsWith("Bearer "))
             {
                 return new NoContentResult();
             }
 
             return new ContentResult()
             {
-                Content = Base64Decode(auth),
+                Content = Base64Decode(auth[0].Substring("Bearer ".Length)),
                 ContentType = "application/json",
                 StatusCode = 200
             };
