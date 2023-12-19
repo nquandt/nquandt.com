@@ -1,7 +1,6 @@
 ---
 title: 'Senior Software Engineer'
 company: 'Milwaukee Tool Inc.'
-date: 'August 2021 - Present'
 ---
 <script>
     export let index;
@@ -9,7 +8,7 @@ date: 'August 2021 - Present'
 </script>
 
 
-<TalkingPoint print {title} {company} {date} {index} url="https://www.milwaukeetool.com">
+<TalkingPoint print {title} {company} {index} url="https://www.milwaukeetool.com">
 
 - Maintain a multi-site [Sitecore 10 XM](https://www.sitecore.com/products/experience-manager?utm_websource=products) topology in kubernetes ([AKS](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes)), with full server side rendering via. [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-6.0).
 - Scope and initiate an incremental migration from [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-6.0) pages to [NextJS](https://nextjs.org/) as our primary application host. This migration aims to adopt a headless philosophy by seperating our CMS from our rendering host.

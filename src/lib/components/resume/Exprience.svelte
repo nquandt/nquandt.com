@@ -2,9 +2,9 @@
 	import Section from './Section.svelte';
 		
 	import MilwaukeeToolBullets from './jobs/MilwaukeeToolBullets.svx';
-	import JensenBullets from './jobs/JensenBullets.svx';
+	import SecuraBullets from './jobs/SecuraBullets.svx';
 
-	let talkingPoints = [MilwaukeeToolBullets, JensenBullets];
+	let talkingPoints = [SecuraBullets, MilwaukeeToolBullets];
 </script>
 
 <Section title="Experience" leftAlignTitle={true}>

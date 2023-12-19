@@ -27,7 +27,7 @@
 				{/if}
 			{/if}
 		</div>
-		<div class="textSecondary text-end">{date}</div>
+		<!--<div class="textSecondary text-end">{date}</div>-->
 	</div>
 	<div class="w-full pt-2">
 		<slot />
