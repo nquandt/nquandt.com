@@ -4,7 +4,7 @@
 	import MilwaukeeToolBullets from './jobs/MilwaukeeToolBullets.svx';
 	import SecuraBullets from './jobs/SecuraBullets.svx';
 
-	let talkingPoints = [SecuraBullets, MilwaukeeToolBullets];
+	let talkingPoints = [MilwaukeeToolBullets, SecuraBullets];
 </script>
 
 <Section title="Experience" leftAlignTitle={true}>
