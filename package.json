@@ -12,7 +12,7 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"engines": {
-		"node": "20.16.0"
+		"node": "20.18.0"
 	},
 	"repository": {
 		"type": "git",
