@@ -2,6 +2,12 @@
 	import Section from './Section.svelte';
 	let favorites = [
 		{
+			display: 'YARP',
+			url: 'https://github.com/microsoft/reverse-proxy',
+			description: 'A reverse-proxy in C#',
+			ecosystem: '.NET',			
+		},
+		{
 			display: 'ReadableExpressions',
 			url: 'https://github.com/agileobjects/ReadableExpressions',
 			description: 'Convert Linq Expressions to readable c# code.',
@@ -13,13 +19,7 @@
 			description: 'A JS, CSS, and HTML minifier for .NET.',
 			ecosystem: '.NET',
 			// class: 'print:hidden'
-		},
-		{
-			display: 'YARP',
-			url: 'https://github.com/microsoft/reverse-proxy',
-			description: 'A reverse-proxy in C#',
-			ecosystem: '.NET',			
-		},
+		},		
 		{
 			display: 'Astro',
 			url: 'https://astro.build/',

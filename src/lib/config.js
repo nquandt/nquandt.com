@@ -31,8 +31,8 @@ export const resume = {
 	lastName: 'Quandt',
 	github: 'nquandt',
 	website: 'nquandt.com',
-	location: 'Sun Prairie, WI',
-	summary: `Full-Stack Developer, with an affinity for object-oriented development and
+	location: 'Madison, WI',
+	summary: `Full-Stack Developer and Architect, with an affinity for object-oriented development and
 algorithms, in pursuit of learning, collaboration, community, and continuous
 professional growth.`
 };

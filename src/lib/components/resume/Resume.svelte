@@ -38,7 +38,7 @@
 						</span>
 						<span slot="column-two" class="flex flex-col gap-6 print:gap-4">
 							<Exprience />
-							<Projects />							
+							<!-- <Projects />							-->
 						</span>
 					</TwoThirdsColumns>
 				</div>
