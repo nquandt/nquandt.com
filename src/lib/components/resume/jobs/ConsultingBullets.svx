@@ -1,5 +1,5 @@
 ---
-title: 'Software Consulting'
+title: 'Software Consultant'
 ---
 <script>
     export let index;
