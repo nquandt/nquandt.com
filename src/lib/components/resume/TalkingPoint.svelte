@@ -22,10 +22,8 @@
 					<a class="textPrimary" href={url} target="_blank">
 						<div class="text-md font-semibold">{company}</div>
 					</a>
-				{:else}
-					{#if company}
-						<div class="text-md font-semibold">{company}</div>
-					{/if}
+				{:else if company}					
+					<div class="text-md font-semibold">{company}</div>					
 				{/if}
 			{/if}
 		</div>
