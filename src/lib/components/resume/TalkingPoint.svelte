@@ -3,8 +3,8 @@
 	let clazz = '';
 	export let title;
 	export let date;
-	export let company;
-	export let url;
+	export let company = "";
+	export let url = "";
 	export let index;
 	export let print;
 </script>
@@ -23,7 +23,9 @@
 						<div class="text-md font-semibold">{company}</div>
 					</a>
 				{:else}
-					<div class="text-md font-semibold">{company}</div>
+					{#if company}
+						<div class="text-md font-semibold">{company}</div>
+					{/if}
 				{/if}
 			{/if}
 		</div>

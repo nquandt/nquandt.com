@@ -1,6 +1,5 @@
 ---
-title: 'Software Contractor'
-company: 'Secura Insurance'
+title: 'Software Consulting'
 ---
 <script>
     export let index;
@@ -8,7 +7,7 @@ company: 'Secura Insurance'
 </script>
 
 
-<TalkingPoint print {title} {company} {index} url="https://www.secura.net">
+<TalkingPoint print {title} {index}>
 
 - Migrate Mulesoft Flows to .NET Web API's incrementally by endpoint.
 - Build .NET API wrappers around legacy soap services to utilize REST + JSON instead of XML.
